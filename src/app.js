@@ -1,12 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {createRoot} from "react-dom/client";
+import Counter from "./components/counter/counter"
 
 const App = () => {
     return (
         <div>
-            <div> Döner </div>
+            <h1>Döner</h1>
+            <Counter />
         </div>
     );
 };
 
-ReactDOM.render(<App/> , document.getElementById("root"));
+createRoot(document.getElementById("root")).render(<App/>);
