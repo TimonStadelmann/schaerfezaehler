@@ -4,7 +4,7 @@ const Input = () => {
     const inputRef = useRef(null);
 
     useEffect(() => {
-        console.log(inputRef.current);
+        console.log(inputRef.current.value);
     });
 
     return (
